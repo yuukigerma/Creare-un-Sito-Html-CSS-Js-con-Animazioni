@@ -49,11 +49,14 @@ p{color: #000; padding-bottom: 30px;}
 
 @media (max-width: 768px){
     .cta{display: none;}
-    .menu{position: absolute; top: 0; right: -100%; background: #000; height: 100vh; padding-top: 80px;}
+    .menu{position: absolute; top: 0; right: -100%; background: #000; height: 100vh; padding-top: 80px; transition: 0.5s;}
     .menu li{display: block;}
     .menu li a{padding: 15px 30px; font-size: 20px;}
 
-    .menu--open{right: 0;}
+    .menu--open{
+        right: 0;
+        transition: 0.5s;
+    }
 
     .hamburger{
         display: block;
